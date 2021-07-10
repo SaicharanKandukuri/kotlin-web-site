@@ -199,7 +199,7 @@ inline fun <reified T> List<*>.asListOfType(): List<T>? =
         null
 ```
 
->**On JVM**: the [array types](basic-types.md#arrays) (`Array<Foo>`) retain the information about the erased type of 
+>**On JVM**: the [array types](arrays.md) (`Array<Foo>`) retain the information about the erased type of 
 >their elements, and the type casts to an array type are partially checked: the 
 >nullability and actual type arguments of the elements type are still erased. For example, 
 >the cast `foo as Array<List<String>?>` will succeed if `foo` is an array holding any `List<*>`, nullable or not.
